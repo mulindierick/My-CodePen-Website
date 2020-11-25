@@ -1,0 +1,265 @@
+/*general rules  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+.display{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.display-c{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ul, li {
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+/* general rules end here */
+
+/* header */
+#header{
+  justify-content: space-between;
+  margin-bottom: 3vw;
+  position: sticky;
+  top: 0;
+  background-color:#FFFFFF;
+}
+#header-img{
+  width: 20vw;
+  margin-left: 4vw;
+}
+#nav-bar{
+  padding-right: 5vw;
+}
+.nav-link{
+  margin: 1vw;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+@media screen and (max-width: 800px){
+  header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2vw; 
+  }
+  .nav-bar-items{
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-link{
+  margin: 0.5vw;
+  font-size: 1rem;
+  font-weight: 600;
+}
+  #header-img{
+  width: 35vw;
+  margin-left: 0vw;
+  }
+}
+
+/* heading before the form*/
+h1{
+  text-align: center;
+  margin: 1vw;
+  font-size: 1.3rem;
+}
+
+/* form */
+form{
+  text-align: center;
+}
+input[type = "email"]{
+  padding: 0.5vw;
+  width: 20vw;
+  margin: 1vw;
+  font-size: 1rem;
+  outline: none;
+}
+input[type = "submit"]{
+  padding: 0.2vw;
+  margin-bottom: 2vw;
+  width: 15vw;
+  outline: none;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  background-color: #365EFF;
+  border: 1px solid #365EFF;
+  color: white;
+  transition: all 320ms ease;
+}
+#submit:hover{
+  background-color: #FFFFFF;
+  color: black;
+  border: 1px solid black;
+  
+}
+@media screen and (max-width: 1000px){
+  input[type = "email"]{
+    width: 30vw;
+  }
+  input[type = "submit"]{
+    width: 20vw;
+  }
+}
+@media screen and (max-width: 700px){
+  input[type = "email"]{
+    width: 50vw;
+  }
+  input[type = "submit"]{
+    width: 30vw;
+  }
+}
+
+/* what we do */
+#what-we-do{
+  width: 70vw;
+  margin: auto;
+  padding-top: 4vw;
+  
+}
+li i.fas{
+  margin: 3vw;
+  font-size: 4rem;
+  color: #365EFF;
+}
+h4 span{
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 1000px){
+  #what-we-do{
+  width: 100%;
+}
+  .what-we-do-item{
+    margin: 2vw;
+  }
+  li i.fas{
+    display: none;
+  }
+}
+@media screen and (max-width: 800px){
+  .what-we-do-item{
+    text-align: center;
+  }
+}
+
+/* our story section */
+#our-story{
+  margin: 4vw auto 4vw auto;
+  width: 50vw;
+  padding-top: 5vw;
+}
+#our-story h2{
+ margin: 1vw;
+}
+iframe{
+  border: none;
+  width: 600px;
+  height: 300px;
+}
+@media screen and (max-width: 1000px){
+  #our-story{
+  width: 80vw;
+}
+iframe{
+  border: none;
+  width: 400px;
+  height: 300px;
+  }
+}
+@media screen and (max-width: 500px){
+  #our-story h2{
+    font-size: 1.2rem;
+  }
+iframe{
+  border: none;
+  width: 300px;
+  height: 200px;
+  }
+}
+
+/* our impact section */
+#our-impact{
+  padding-top: 5vw;
+  width: 70vw;
+  margin: 6vw auto 4vw auto;
+}
+.our-impact-item{
+  border: 1px solid;
+  width: 40%;
+  margin: 1vw;
+  text-align: center;
+}
+.our-impact-item h3{
+  background-color: #F8F8FE;
+  padding: 1vw;
+}
+.our-impact-item h2{
+  padding: 1.5vw;
+  font-weight: 600;
+}
+.our-impact-item li{
+  line-height: 1.8;
+}
+button{
+  padding: 0.5vw;
+  margin: 1vw;
+  background-color: #365EFF;
+  margin: 1vw;
+  color: white;
+  border: none;
+  font-size: 1rem;
+}
+@media screen and (max-width: 1000px){
+#our-impact{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  }
+  .our-impact-item{
+  width: 50%;
+  }
+}
+@media screen and (max-width: 700px){
+  .our-impact-item{
+  width: 70%;
+  }
+}
+
+/* footer */ 
+footer{
+  background-color: #F8F8FE;
+  width: 70vw;
+  margin: auto;
+}
+.footer{
+  align-items: flex-end;
+  justify-content: center;
+}
+.footer ul {
+  padding: 2vw 3vw 0.3vw 0vw;
+}
+footer a {
+  margin-left: 0.5vw;
+}
+footer p {
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 0vw 2.5vw 2vw 0vw;
+}
+@media screen and (max-width: 1000px){
+footer{
+  width: 100%;
+  }
+}
+
+
